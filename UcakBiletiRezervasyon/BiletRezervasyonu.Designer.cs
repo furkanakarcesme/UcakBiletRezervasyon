@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.neredenResLabel = new System.Windows.Forms.Label();
             this.nereyeResLabel = new System.Windows.Forms.Label();
             this.showFlightsButton = new System.Windows.Forms.Button();
@@ -42,21 +43,41 @@
             this.ucusTarihLabel = new System.Windows.Forms.Label();
             this.ucusNoLabel = new System.Windows.Forms.Label();
             this.koltukNoLabel = new System.Windows.Forms.Label();
-            this.birthDateTimePickerRes = new System.Windows.Forms.DateTimePicker();
             this.kimlikResText = new System.Windows.Forms.TextBox();
             this.uyeAdResText = new System.Windows.Forms.TextBox();
             this.uyeSoyResText = new System.Windows.Forms.TextBox();
             this.uyeMailResText = new System.Windows.Forms.TextBox();
             this.uyeTelResText = new System.Windows.Forms.TextBox();
-            this.ucusNoResText = new System.Windows.Forms.TextBox();
+            this.kalkisSaatiResText = new System.Windows.Forms.TextBox();
             this.uyeAdresResText = new System.Windows.Forms.TextBox();
-            this.koltukNoResText = new System.Windows.Forms.TextBox();
+            this.ucretResText = new System.Windows.Forms.TextBox();
             this.resevasyonuTamamlaButton = new System.Windows.Forms.Button();
             this.uyeBilgisiGetirButton = new System.Windows.Forms.Button();
-            this.dateTimePickerFlightRes = new System.Windows.Forms.DateTimePicker();
+            this.odev2DataSet4 = new UcakBiletiRezervasyon.odev2DataSet4();
+            this.havalimanlariBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.havalimanlariTableAdapter = new UcakBiletiRezervasyon.odev2DataSet4TableAdapters.havalimanlariTableAdapter();
+            this.odev2DataSet5 = new UcakBiletiRezervasyon.odev2DataSet5();
+            this.havalimanlariBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.havalimanlariTableAdapter1 = new UcakBiletiRezervasyon.odev2DataSet5TableAdapters.havalimanlariTableAdapter();
+            this.dogumTarihiResText = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.odev2DataSet6 = new UcakBiletiRezervasyon.odev2DataSet6();
+            this.havalimanlariBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.havalimanlariTableAdapter2 = new UcakBiletiRezervasyon.odev2DataSet6TableAdapters.havalimanlariTableAdapter();
+            this.odev2DataSet7 = new UcakBiletiRezervasyon.odev2DataSet7();
+            this.havalimanlariBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.havalimanlariTableAdapter3 = new UcakBiletiRezervasyon.odev2DataSet7TableAdapters.havalimanlariTableAdapter();
+            this.uyeUcusTarihiResText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ucuslarDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // neredenResLabel
@@ -88,6 +109,7 @@
             this.showFlightsButton.TabIndex = 2;
             this.showFlightsButton.Text = "Göster";
             this.showFlightsButton.UseVisualStyleBackColor = true;
+            this.showFlightsButton.Click += new System.EventHandler(this.showFlightsButton_Click);
             // 
             // ucuslarDataGridView
             // 
@@ -96,6 +118,7 @@
             this.ucuslarDataGridView.Name = "ucuslarDataGridView";
             this.ucuslarDataGridView.Size = new System.Drawing.Size(583, 619);
             this.ucuslarDataGridView.TabIndex = 3;
+            this.ucuslarDataGridView.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.ucuslarDataGridView_CellEnter);
             // 
             // uyeKimlikResLabel
             // 
@@ -184,9 +207,9 @@
             this.ucusNoLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ucusNoLabel.Location = new System.Drawing.Point(668, 542);
             this.ucusNoLabel.Name = "ucusNoLabel";
-            this.ucusNoLabel.Size = new System.Drawing.Size(56, 20);
+            this.ucusNoLabel.Size = new System.Drawing.Size(79, 20);
             this.ucusNoLabel.TabIndex = 12;
-            this.ucusNoLabel.Text = "Uçuş No";
+            this.ucusNoLabel.Text = "Kalkış Saati";
             // 
             // koltukNoLabel
             // 
@@ -194,16 +217,9 @@
             this.koltukNoLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.koltukNoLabel.Location = new System.Drawing.Point(668, 595);
             this.koltukNoLabel.Name = "koltukNoLabel";
-            this.koltukNoLabel.Size = new System.Drawing.Size(65, 20);
+            this.koltukNoLabel.Size = new System.Drawing.Size(42, 20);
             this.koltukNoLabel.TabIndex = 13;
-            this.koltukNoLabel.Text = "Koltuk No";
-            // 
-            // birthDateTimePickerRes
-            // 
-            this.birthDateTimePickerRes.Location = new System.Drawing.Point(826, 242);
-            this.birthDateTimePickerRes.Name = "birthDateTimePickerRes";
-            this.birthDateTimePickerRes.Size = new System.Drawing.Size(213, 20);
-            this.birthDateTimePickerRes.TabIndex = 14;
+            this.koltukNoLabel.Text = "Ücret";
             // 
             // kimlikResText
             // 
@@ -240,12 +256,12 @@
             this.uyeTelResText.Size = new System.Drawing.Size(213, 20);
             this.uyeTelResText.TabIndex = 19;
             // 
-            // ucusNoResText
+            // kalkisSaatiResText
             // 
-            this.ucusNoResText.Location = new System.Drawing.Point(826, 542);
-            this.ucusNoResText.Name = "ucusNoResText";
-            this.ucusNoResText.Size = new System.Drawing.Size(213, 20);
-            this.ucusNoResText.TabIndex = 20;
+            this.kalkisSaatiResText.Location = new System.Drawing.Point(826, 542);
+            this.kalkisSaatiResText.Name = "kalkisSaatiResText";
+            this.kalkisSaatiResText.Size = new System.Drawing.Size(213, 20);
+            this.kalkisSaatiResText.TabIndex = 20;
             // 
             // uyeAdresResText
             // 
@@ -255,12 +271,12 @@
             this.uyeAdresResText.Size = new System.Drawing.Size(213, 67);
             this.uyeAdresResText.TabIndex = 20;
             // 
-            // koltukNoResText
+            // ucretResText
             // 
-            this.koltukNoResText.Location = new System.Drawing.Point(826, 595);
-            this.koltukNoResText.Name = "koltukNoResText";
-            this.koltukNoResText.Size = new System.Drawing.Size(213, 20);
-            this.koltukNoResText.TabIndex = 22;
+            this.ucretResText.Location = new System.Drawing.Point(826, 595);
+            this.ucretResText.Name = "ucretResText";
+            this.ucretResText.Size = new System.Drawing.Size(213, 20);
+            this.ucretResText.TabIndex = 22;
             // 
             // resevasyonuTamamlaButton
             // 
@@ -283,50 +299,117 @@
             this.uyeBilgisiGetirButton.UseVisualStyleBackColor = true;
             this.uyeBilgisiGetirButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // dateTimePickerFlightRes
+            // odev2DataSet4
             // 
-            this.dateTimePickerFlightRes.Location = new System.Drawing.Point(826, 490);
-            this.dateTimePickerFlightRes.Name = "dateTimePickerFlightRes";
-            this.dateTimePickerFlightRes.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePickerFlightRes.TabIndex = 25;
+            this.odev2DataSet4.DataSetName = "odev2DataSet4";
+            this.odev2DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // havalimanlariBindingSource
+            // 
+            this.havalimanlariBindingSource.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource.DataSource = this.odev2DataSet4;
+            // 
+            // havalimanlariTableAdapter
+            // 
+            this.havalimanlariTableAdapter.ClearBeforeFill = true;
+            // 
+            // odev2DataSet5
+            // 
+            this.odev2DataSet5.DataSetName = "odev2DataSet5";
+            this.odev2DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // havalimanlariBindingSource1
+            // 
+            this.havalimanlariBindingSource1.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource1.DataSource = this.odev2DataSet5;
+            // 
+            // havalimanlariTableAdapter1
+            // 
+            this.havalimanlariTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dogumTarihiResText
+            // 
+            this.dogumTarihiResText.Location = new System.Drawing.Point(826, 243);
+            this.dogumTarihiResText.Name = "dogumTarihiResText";
+            this.dogumTarihiResText.Size = new System.Drawing.Size(213, 20);
+            this.dogumTarihiResText.TabIndex = 28;
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownWidth = 176;
+            this.comboBox1.DataSource = this.havalimanlariBindingSource2;
+            this.comboBox1.DisplayMember = "Sehirler";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 25);
+            this.comboBox1.Location = new System.Drawing.Point(88, 26);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 21);
-            this.comboBox1.TabIndex = 26;
+            this.comboBox1.Size = new System.Drawing.Size(164, 21);
+            this.comboBox1.TabIndex = 29;
+            this.comboBox1.ValueMember = "Kimlik";
             // 
             // comboBox2
             // 
-            this.comboBox2.DropDownWidth = 176;
+            this.comboBox2.DataSource = this.havalimanlariBindingSource3;
+            this.comboBox2.DisplayMember = "Sehirler";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(342, 26);
+            this.comboBox2.Location = new System.Drawing.Point(336, 26);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(172, 21);
-            this.comboBox2.TabIndex = 27;
+            this.comboBox2.Size = new System.Drawing.Size(167, 21);
+            this.comboBox2.TabIndex = 30;
+            this.comboBox2.ValueMember = "Kimlik";
+            // 
+            // odev2DataSet6
+            // 
+            this.odev2DataSet6.DataSetName = "odev2DataSet6";
+            this.odev2DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // havalimanlariBindingSource2
+            // 
+            this.havalimanlariBindingSource2.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource2.DataSource = this.odev2DataSet6;
+            // 
+            // havalimanlariTableAdapter2
+            // 
+            this.havalimanlariTableAdapter2.ClearBeforeFill = true;
+            // 
+            // odev2DataSet7
+            // 
+            this.odev2DataSet7.DataSetName = "odev2DataSet7";
+            this.odev2DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // havalimanlariBindingSource3
+            // 
+            this.havalimanlariBindingSource3.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource3.DataSource = this.odev2DataSet7;
+            // 
+            // havalimanlariTableAdapter3
+            // 
+            this.havalimanlariTableAdapter3.ClearBeforeFill = true;
+            // 
+            // uyeUcusTarihiResText
+            // 
+            this.uyeUcusTarihiResText.Location = new System.Drawing.Point(826, 491);
+            this.uyeUcusTarihiResText.Name = "uyeUcusTarihiResText";
+            this.uyeUcusTarihiResText.Size = new System.Drawing.Size(213, 20);
+            this.uyeUcusTarihiResText.TabIndex = 31;
             // 
             // BiletRezervasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 730);
+            this.Controls.Add(this.uyeUcusTarihiResText);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePickerFlightRes);
+            this.Controls.Add(this.dogumTarihiResText);
             this.Controls.Add(this.uyeBilgisiGetirButton);
             this.Controls.Add(this.resevasyonuTamamlaButton);
-            this.Controls.Add(this.koltukNoResText);
+            this.Controls.Add(this.ucretResText);
             this.Controls.Add(this.uyeAdresResText);
-            this.Controls.Add(this.ucusNoResText);
+            this.Controls.Add(this.kalkisSaatiResText);
             this.Controls.Add(this.uyeTelResText);
             this.Controls.Add(this.uyeMailResText);
             this.Controls.Add(this.uyeSoyResText);
             this.Controls.Add(this.uyeAdResText);
             this.Controls.Add(this.kimlikResText);
-            this.Controls.Add(this.birthDateTimePickerRes);
             this.Controls.Add(this.koltukNoLabel);
             this.Controls.Add(this.ucusNoLabel);
             this.Controls.Add(this.ucusTarihLabel);
@@ -343,7 +426,16 @@
             this.Controls.Add(this.neredenResLabel);
             this.Name = "BiletRezervasyonu";
             this.Text = "Bilet Rezervasyonu";
+            this.Load += new System.EventHandler(this.BiletRezervasyonu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ucuslarDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,19 +457,31 @@
         private System.Windows.Forms.Label ucusTarihLabel;
         private System.Windows.Forms.Label ucusNoLabel;
         private System.Windows.Forms.Label koltukNoLabel;
-        private System.Windows.Forms.DateTimePicker birthDateTimePickerRes;
         private System.Windows.Forms.TextBox kimlikResText;
         private System.Windows.Forms.TextBox uyeAdResText;
         private System.Windows.Forms.TextBox uyeSoyResText;
         private System.Windows.Forms.TextBox uyeMailResText;
         private System.Windows.Forms.TextBox uyeTelResText;
-        private System.Windows.Forms.TextBox ucusNoResText;
+        private System.Windows.Forms.TextBox kalkisSaatiResText;
         private System.Windows.Forms.TextBox uyeAdresResText;
-        private System.Windows.Forms.TextBox koltukNoResText;
+        private System.Windows.Forms.TextBox ucretResText;
         private System.Windows.Forms.Button resevasyonuTamamlaButton;
         private System.Windows.Forms.Button uyeBilgisiGetirButton;
-        private System.Windows.Forms.DateTimePicker dateTimePickerFlightRes;
+        private odev2DataSet4 odev2DataSet4;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource;
+        private odev2DataSet4TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter;
+        private odev2DataSet5 odev2DataSet5;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource1;
+        private odev2DataSet5TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter1;
+        private System.Windows.Forms.TextBox dogumTarihiResText;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private odev2DataSet6 odev2DataSet6;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource2;
+        private odev2DataSet6TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter2;
+        private odev2DataSet7 odev2DataSet7;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource3;
+        private odev2DataSet7TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter3;
+        private System.Windows.Forms.TextBox uyeUcusTarihiResText;
     }
 }

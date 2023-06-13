@@ -28,53 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.havaYoluSirketiLabel = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.ucusBilgisiEkleLabel = new System.Windows.Forms.Label();
             this.kalkisLabel = new System.Windows.Forms.Label();
             this.varisLabel = new System.Windows.Forms.Label();
-            this.departureTimeLabel = new System.Windows.Forms.Label();
-            this.arrivalTimeLabel = new System.Windows.Forms.Label();
-            this.ucusSinifiLabel = new System.Windows.Forms.Label();
-            this.priceLabel = new System.Windows.Forms.Label();
-            this.koltukSayisiLabel = new System.Windows.Forms.Label();
+            this.kalkisSaatiUcusEkleLabel = new System.Windows.Forms.Label();
+            this.varisSaatiUcusEkleLabel = new System.Windows.Forms.Label();
+            this.ucretUcusEkleLabel = new System.Windows.Forms.Label();
             this.ucusInfoKaydetButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.kalkisSaatText = new System.Windows.Forms.TextBox();
+            this.varisSaatText = new System.Windows.Forms.TextBox();
+            this.ucretUcusEkleText = new System.Windows.Forms.TextBox();
+            this.havalimanlariBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.odev2DataSet1 = new UcakBiletiRezervasyon.odev2DataSet1();
+            this.odev2DataSet = new UcakBiletiRezervasyon.odev2DataSet();
+            this.havalimanlariBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.havalimanlariTableAdapter = new UcakBiletiRezervasyon.odev2DataSetTableAdapters.havalimanlariTableAdapter();
+            this.havalimanlariTableAdapter1 = new UcakBiletiRezervasyon.odev2DataSet1TableAdapters.havalimanlariTableAdapter();
+            this.havalimanlariBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.odev2DataSet3 = new UcakBiletiRezervasyon.odev2DataSet3();
+            this.odev2DataSet2 = new UcakBiletiRezervasyon.odev2DataSet2();
+            this.ucuslarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ucuslarTableAdapter = new UcakBiletiRezervasyon.odev2DataSet2TableAdapters.ucuslarTableAdapter();
+            this.havalimanlariTableAdapter2 = new UcakBiletiRezervasyon.odev2DataSet3TableAdapters.havalimanlariTableAdapter();
+            this.tarihUcusEkleLabel = new System.Windows.Forms.Label();
+            this.dateTimePickerUcusTarihi = new System.Windows.Forms.DateTimePicker();
+            this.kalkisComboBox = new System.Windows.Forms.ComboBox();
+            this.havalimanikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sONDataSet = new UcakBiletiRezervasyon.SONDataSet();
+            this.varisComboBox = new System.Windows.Forms.ComboBox();
+            this.havalimanivBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sONDataSet1 = new UcakBiletiRezervasyon.SONDataSet1();
+            this.havalimani_kTableAdapter = new UcakBiletiRezervasyon.SONDataSetTableAdapters.havalimani_kTableAdapter();
+            this.havalimani_vTableAdapter = new UcakBiletiRezervasyon.SONDataSet1TableAdapters.havalimani_vTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucuslarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sONDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanivBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sONDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // ucusBilgisiEkleLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(29, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Uçuş Bilgisi Ekle";
-            // 
-            // havaYoluSirketiLabel
-            // 
-            this.havaYoluSirketiLabel.AutoSize = true;
-            this.havaYoluSirketiLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.havaYoluSirketiLabel.Location = new System.Drawing.Point(33, 99);
-            this.havaYoluSirketiLabel.Name = "havaYoluSirketiLabel";
-            this.havaYoluSirketiLabel.Size = new System.Drawing.Size(103, 20);
-            this.havaYoluSirketiLabel.TabIndex = 1;
-            this.havaYoluSirketiLabel.Text = "Havayolu Şirketi";
+            this.ucusBilgisiEkleLabel.AutoSize = true;
+            this.ucusBilgisiEkleLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 17F);
+            this.ucusBilgisiEkleLabel.Location = new System.Drawing.Point(247, 44);
+            this.ucusBilgisiEkleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ucusBilgisiEkleLabel.Name = "ucusBilgisiEkleLabel";
+            this.ucusBilgisiEkleLabel.Size = new System.Drawing.Size(199, 37);
+            this.ucusBilgisiEkleLabel.TabIndex = 0;
+            this.ucusBilgisiEkleLabel.Text = "Uçuş Bilgisi Ekle";
             // 
             // kalkisLabel
             // 
             this.kalkisLabel.AutoSize = true;
             this.kalkisLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kalkisLabel.Location = new System.Drawing.Point(33, 150);
+            this.kalkisLabel.Location = new System.Drawing.Point(38, 120);
+            this.kalkisLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.kalkisLabel.Name = "kalkisLabel";
-            this.kalkisLabel.Size = new System.Drawing.Size(57, 20);
+            this.kalkisLabel.Size = new System.Drawing.Size(72, 24);
             this.kalkisLabel.TabIndex = 2;
             this.kalkisLabel.Text = "Nereden";
             // 
@@ -82,153 +102,257 @@
             // 
             this.varisLabel.AutoSize = true;
             this.varisLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.varisLabel.Location = new System.Drawing.Point(33, 203);
+            this.varisLabel.Location = new System.Drawing.Point(38, 188);
+            this.varisLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.varisLabel.Name = "varisLabel";
-            this.varisLabel.Size = new System.Drawing.Size(48, 20);
+            this.varisLabel.Size = new System.Drawing.Size(61, 24);
             this.varisLabel.TabIndex = 3;
             this.varisLabel.Text = "Nereye";
             // 
-            // departureTimeLabel
+            // kalkisSaatiUcusEkleLabel
             // 
-            this.departureTimeLabel.AutoSize = true;
-            this.departureTimeLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.departureTimeLabel.Location = new System.Drawing.Point(33, 256);
-            this.departureTimeLabel.Name = "departureTimeLabel";
-            this.departureTimeLabel.Size = new System.Drawing.Size(79, 20);
-            this.departureTimeLabel.TabIndex = 4;
-            this.departureTimeLabel.Text = "Kalkış Saati";
+            this.kalkisSaatiUcusEkleLabel.AutoSize = true;
+            this.kalkisSaatiUcusEkleLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kalkisSaatiUcusEkleLabel.Location = new System.Drawing.Point(38, 327);
+            this.kalkisSaatiUcusEkleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.kalkisSaatiUcusEkleLabel.Name = "kalkisSaatiUcusEkleLabel";
+            this.kalkisSaatiUcusEkleLabel.Size = new System.Drawing.Size(99, 24);
+            this.kalkisSaatiUcusEkleLabel.TabIndex = 4;
+            this.kalkisSaatiUcusEkleLabel.Text = "Kalkış Saati";
             // 
-            // arrivalTimeLabel
+            // varisSaatiUcusEkleLabel
             // 
-            this.arrivalTimeLabel.AutoSize = true;
-            this.arrivalTimeLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.arrivalTimeLabel.Location = new System.Drawing.Point(33, 311);
-            this.arrivalTimeLabel.Name = "arrivalTimeLabel";
-            this.arrivalTimeLabel.Size = new System.Drawing.Size(64, 20);
-            this.arrivalTimeLabel.TabIndex = 5;
-            this.arrivalTimeLabel.Text = "İniş Saati";
+            this.varisSaatiUcusEkleLabel.AutoSize = true;
+            this.varisSaatiUcusEkleLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.varisSaatiUcusEkleLabel.Location = new System.Drawing.Point(38, 406);
+            this.varisSaatiUcusEkleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.varisSaatiUcusEkleLabel.Name = "varisSaatiUcusEkleLabel";
+            this.varisSaatiUcusEkleLabel.Size = new System.Drawing.Size(80, 24);
+            this.varisSaatiUcusEkleLabel.TabIndex = 5;
+            this.varisSaatiUcusEkleLabel.Text = "İniş Saati";
             // 
-            // ucusSinifiLabel
+            // ucretUcusEkleLabel
             // 
-            this.ucusSinifiLabel.AutoSize = true;
-            this.ucusSinifiLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ucusSinifiLabel.Location = new System.Drawing.Point(33, 366);
-            this.ucusSinifiLabel.Name = "ucusSinifiLabel";
-            this.ucusSinifiLabel.Size = new System.Drawing.Size(72, 20);
-            this.ucusSinifiLabel.TabIndex = 6;
-            this.ucusSinifiLabel.Text = "Uçuş Sınıfı";
-            // 
-            // priceLabel
-            // 
-            this.priceLabel.AutoSize = true;
-            this.priceLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.priceLabel.Location = new System.Drawing.Point(33, 421);
-            this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(42, 20);
-            this.priceLabel.TabIndex = 7;
-            this.priceLabel.Text = "Ücret";
-            // 
-            // koltukSayisiLabel
-            // 
-            this.koltukSayisiLabel.AutoSize = true;
-            this.koltukSayisiLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.koltukSayisiLabel.Location = new System.Drawing.Point(33, 477);
-            this.koltukSayisiLabel.Name = "koltukSayisiLabel";
-            this.koltukSayisiLabel.Size = new System.Drawing.Size(84, 20);
-            this.koltukSayisiLabel.TabIndex = 8;
-            this.koltukSayisiLabel.Text = "Koltuk Sayısı";
+            this.ucretUcusEkleLabel.AutoSize = true;
+            this.ucretUcusEkleLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ucretUcusEkleLabel.Location = new System.Drawing.Point(38, 474);
+            this.ucretUcusEkleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ucretUcusEkleLabel.Name = "ucretUcusEkleLabel";
+            this.ucretUcusEkleLabel.Size = new System.Drawing.Size(81, 24);
+            this.ucretUcusEkleLabel.TabIndex = 8;
+            this.ucretUcusEkleLabel.Text = "Ücret (TL)";
             // 
             // ucusInfoKaydetButton
             // 
             this.ucusInfoKaydetButton.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ucusInfoKaydetButton.Location = new System.Drawing.Point(195, 530);
+            this.ucusInfoKaydetButton.Location = new System.Drawing.Point(254, 554);
+            this.ucusInfoKaydetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ucusInfoKaydetButton.Name = "ucusInfoKaydetButton";
-            this.ucusInfoKaydetButton.Size = new System.Drawing.Size(112, 34);
+            this.ucusInfoKaydetButton.Size = new System.Drawing.Size(159, 49);
             this.ucusInfoKaydetButton.TabIndex = 9;
             this.ucusInfoKaydetButton.Text = "Kaydet";
             this.ucusInfoKaydetButton.UseVisualStyleBackColor = true;
+            this.ucusInfoKaydetButton.Click += new System.EventHandler(this.ucusInfoKaydetButton_Click);
             // 
-            // textBox1
+            // kalkisSaatText
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 20);
-            this.textBox1.TabIndex = 10;
+            this.kalkisSaatText.Location = new System.Drawing.Point(254, 328);
+            this.kalkisSaatText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kalkisSaatText.Name = "kalkisSaatText";
+            this.kalkisSaatText.Size = new System.Drawing.Size(376, 22);
+            this.kalkisSaatText.TabIndex = 13;
             // 
-            // textBox2
+            // varisSaatText
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 150);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(283, 20);
-            this.textBox2.TabIndex = 11;
+            this.varisSaatText.Location = new System.Drawing.Point(254, 407);
+            this.varisSaatText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.varisSaatText.Name = "varisSaatText";
+            this.varisSaatText.Size = new System.Drawing.Size(376, 22);
+            this.varisSaatText.TabIndex = 14;
             // 
-            // textBox3
+            // ucretUcusEkleText
             // 
-            this.textBox3.Location = new System.Drawing.Point(195, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(283, 20);
-            this.textBox3.TabIndex = 12;
+            this.ucretUcusEkleText.Location = new System.Drawing.Point(254, 476);
+            this.ucretUcusEkleText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ucretUcusEkleText.Name = "ucretUcusEkleText";
+            this.ucretUcusEkleText.Size = new System.Drawing.Size(376, 22);
+            this.ucretUcusEkleText.TabIndex = 17;
+            this.ucretUcusEkleText.TextChanged += new System.EventHandler(this.koltukSayisiEcoText_TextChanged);
             // 
-            // textBox4
+            // havalimanlariBindingSource1
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 256);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(283, 20);
-            this.textBox4.TabIndex = 13;
+            this.havalimanlariBindingSource1.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource1.DataSource = this.odev2DataSet1;
             // 
-            // textBox5
+            // odev2DataSet1
             // 
-            this.textBox5.Location = new System.Drawing.Point(195, 311);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(283, 20);
-            this.textBox5.TabIndex = 14;
+            this.odev2DataSet1.DataSetName = "odev2DataSet1";
+            this.odev2DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox6
+            // odev2DataSet
             // 
-            this.textBox6.Location = new System.Drawing.Point(195, 366);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(283, 20);
-            this.textBox6.TabIndex = 15;
+            this.odev2DataSet.DataSetName = "odev2DataSet";
+            this.odev2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox7
+            // havalimanlariBindingSource
             // 
-            this.textBox7.Location = new System.Drawing.Point(195, 421);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(283, 20);
-            this.textBox7.TabIndex = 16;
+            this.havalimanlariBindingSource.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource.DataSource = this.odev2DataSet;
             // 
-            // textBox8
+            // havalimanlariTableAdapter
             // 
-            this.textBox8.Location = new System.Drawing.Point(195, 478);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(283, 20);
-            this.textBox8.TabIndex = 17;
+            this.havalimanlariTableAdapter.ClearBeforeFill = true;
+            // 
+            // havalimanlariTableAdapter1
+            // 
+            this.havalimanlariTableAdapter1.ClearBeforeFill = true;
+            // 
+            // havalimanlariBindingSource2
+            // 
+            this.havalimanlariBindingSource2.DataMember = "havalimanlari";
+            this.havalimanlariBindingSource2.DataSource = this.odev2DataSet3;
+            // 
+            // odev2DataSet3
+            // 
+            this.odev2DataSet3.DataSetName = "odev2DataSet3";
+            this.odev2DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // odev2DataSet2
+            // 
+            this.odev2DataSet2.DataSetName = "odev2DataSet2";
+            this.odev2DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ucuslarBindingSource
+            // 
+            this.ucuslarBindingSource.DataMember = "ucuslar";
+            this.ucuslarBindingSource.DataSource = this.odev2DataSet2;
+            // 
+            // ucuslarTableAdapter
+            // 
+            this.ucuslarTableAdapter.ClearBeforeFill = true;
+            // 
+            // havalimanlariTableAdapter2
+            // 
+            this.havalimanlariTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tarihUcusEkleLabel
+            // 
+            this.tarihUcusEkleLabel.AutoSize = true;
+            this.tarihUcusEkleLabel.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tarihUcusEkleLabel.Location = new System.Drawing.Point(38, 260);
+            this.tarihUcusEkleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tarihUcusEkleLabel.Name = "tarihUcusEkleLabel";
+            this.tarihUcusEkleLabel.Size = new System.Drawing.Size(91, 24);
+            this.tarihUcusEkleLabel.TabIndex = 23;
+            this.tarihUcusEkleLabel.Text = "Uçuş Tarihi";
+            // 
+            // dateTimePickerUcusTarihi
+            // 
+            this.dateTimePickerUcusTarihi.Location = new System.Drawing.Point(254, 260);
+            this.dateTimePickerUcusTarihi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerUcusTarihi.Name = "dateTimePickerUcusTarihi";
+            this.dateTimePickerUcusTarihi.Size = new System.Drawing.Size(376, 22);
+            this.dateTimePickerUcusTarihi.TabIndex = 24;
+            // 
+            // kalkisComboBox
+            // 
+            this.kalkisComboBox.DataSource = this.havalimanikBindingSource;
+            this.kalkisComboBox.DisplayMember = "havalimani_adi";
+            this.kalkisComboBox.FormattingEnabled = true;
+            this.kalkisComboBox.Location = new System.Drawing.Point(254, 121);
+            this.kalkisComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kalkisComboBox.Name = "kalkisComboBox";
+            this.kalkisComboBox.Size = new System.Drawing.Size(376, 24);
+            this.kalkisComboBox.TabIndex = 25;
+            this.kalkisComboBox.ValueMember = "havalimani_id";
+            // 
+            // havalimanikBindingSource
+            // 
+            this.havalimanikBindingSource.DataMember = "havalimani_k";
+            this.havalimanikBindingSource.DataSource = this.sONDataSet;
+            // 
+            // sONDataSet
+            // 
+            this.sONDataSet.DataSetName = "SONDataSet";
+            this.sONDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // varisComboBox
+            // 
+            this.varisComboBox.DataSource = this.havalimanivBindingSource;
+            this.varisComboBox.DisplayMember = "havalimani_adi";
+            this.varisComboBox.FormattingEnabled = true;
+            this.varisComboBox.Location = new System.Drawing.Point(254, 189);
+            this.varisComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.varisComboBox.Name = "varisComboBox";
+            this.varisComboBox.Size = new System.Drawing.Size(376, 24);
+            this.varisComboBox.TabIndex = 26;
+            this.varisComboBox.ValueMember = "havalimani_id";
+            // 
+            // havalimanivBindingSource
+            // 
+            this.havalimanivBindingSource.DataMember = "havalimani_v";
+            this.havalimanivBindingSource.DataSource = this.sONDataSet1;
+            // 
+            // sONDataSet1
+            // 
+            this.sONDataSet1.DataSetName = "SONDataSet1";
+            this.sONDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // havalimani_kTableAdapter
+            // 
+            this.havalimani_kTableAdapter.ClearBeforeFill = true;
+            // 
+            // havalimani_vTableAdapter
+            // 
+            this.havalimani_vTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 11F);
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 50);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "G";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UcusEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 603);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(685, 631);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.varisComboBox);
+            this.Controls.Add(this.kalkisComboBox);
+            this.Controls.Add(this.dateTimePickerUcusTarihi);
+            this.Controls.Add(this.tarihUcusEkleLabel);
+            this.Controls.Add(this.ucretUcusEkleText);
+            this.Controls.Add(this.varisSaatText);
+            this.Controls.Add(this.kalkisSaatText);
             this.Controls.Add(this.ucusInfoKaydetButton);
-            this.Controls.Add(this.koltukSayisiLabel);
-            this.Controls.Add(this.priceLabel);
-            this.Controls.Add(this.ucusSinifiLabel);
-            this.Controls.Add(this.arrivalTimeLabel);
-            this.Controls.Add(this.departureTimeLabel);
+            this.Controls.Add(this.ucretUcusEkleLabel);
+            this.Controls.Add(this.varisSaatiUcusEkleLabel);
+            this.Controls.Add(this.kalkisSaatiUcusEkleLabel);
             this.Controls.Add(this.varisLabel);
             this.Controls.Add(this.kalkisLabel);
-            this.Controls.Add(this.havaYoluSirketiLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ucusBilgisiEkleLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UcusEkle";
             this.Text = "Uçuş Ekle";
+            this.Load += new System.EventHandler(this.UcusEkle_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanlariBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.odev2DataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ucuslarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sONDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.havalimanivBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sONDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,23 +360,38 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label havaYoluSirketiLabel;
+        private System.Windows.Forms.Label ucusBilgisiEkleLabel;
         private System.Windows.Forms.Label kalkisLabel;
         private System.Windows.Forms.Label varisLabel;
-        private System.Windows.Forms.Label departureTimeLabel;
-        private System.Windows.Forms.Label arrivalTimeLabel;
-        private System.Windows.Forms.Label ucusSinifiLabel;
-        private System.Windows.Forms.Label priceLabel;
-        private System.Windows.Forms.Label koltukSayisiLabel;
+        private System.Windows.Forms.Label kalkisSaatiUcusEkleLabel;
+        private System.Windows.Forms.Label varisSaatiUcusEkleLabel;
+        private System.Windows.Forms.Label ucretUcusEkleLabel;
         private System.Windows.Forms.Button ucusInfoKaydetButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox kalkisSaatText;
+        private System.Windows.Forms.TextBox varisSaatText;
+        private System.Windows.Forms.TextBox ucretUcusEkleText;
+        private odev2DataSet odev2DataSet;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource;
+        private odev2DataSetTableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter;
+        private odev2DataSet1 odev2DataSet1;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource1;
+        private odev2DataSet1TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter1;
+        private odev2DataSet2 odev2DataSet2;
+        private System.Windows.Forms.BindingSource ucuslarBindingSource;
+        private odev2DataSet2TableAdapters.ucuslarTableAdapter ucuslarTableAdapter;
+        private odev2DataSet3 odev2DataSet3;
+        private System.Windows.Forms.BindingSource havalimanlariBindingSource2;
+        private odev2DataSet3TableAdapters.havalimanlariTableAdapter havalimanlariTableAdapter2;
+        private System.Windows.Forms.Label tarihUcusEkleLabel;
+        private System.Windows.Forms.DateTimePicker dateTimePickerUcusTarihi;
+        private System.Windows.Forms.ComboBox kalkisComboBox;
+        private System.Windows.Forms.ComboBox varisComboBox;
+        private SONDataSet sONDataSet;
+        private System.Windows.Forms.BindingSource havalimanikBindingSource;
+        private SONDataSetTableAdapters.havalimani_kTableAdapter havalimani_kTableAdapter;
+        private SONDataSet1 sONDataSet1;
+        private System.Windows.Forms.BindingSource havalimanivBindingSource;
+        private SONDataSet1TableAdapters.havalimani_vTableAdapter havalimani_vTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

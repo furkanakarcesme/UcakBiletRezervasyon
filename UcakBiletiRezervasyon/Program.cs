@@ -16,7 +16,7 @@ namespace UcakBiletiRezervasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BiletRezervasyonu());
+            Application.Run(new KullaniciSec());
         }
     }
 }
